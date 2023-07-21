@@ -1,0 +1,4 @@
+package three
+
+func Three() {
+}
