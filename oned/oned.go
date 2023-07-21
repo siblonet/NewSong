@@ -31,8 +31,16 @@ func Oned() {
 		return
 	}
 
-	// Now you can work with the 'data' slice of maps
-	for index := range data {
-		fmt.Printf("index: %d\n", index)
+	// Print elements from index 48 to 103 (inclusive)
+	for i := 48; i < len(data) && i < 50; i++ {
+		item := data[i]
+		fmt.Printf("index: %d\n", i)
+
+		// Handle the fields dynamically using type assertions or other techniques
+		for key, value := range item {
+			fmt.Printf("%s: %v\n", key, value)
+		}
+
+		fmt.Println()
 	}
 }
