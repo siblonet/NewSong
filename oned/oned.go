@@ -7,7 +7,7 @@ import (
 )
 
 func Oned() {
-	url := "https://example.com/data.json" // Replace this with the actual URL of the JSON data
+	url := "https://storage.googleapis.com/seeme-7a462.appspot.com/newson/newson.js" // Replace this with the actual URL of the JSON data
 
 	// Make an HTTP GET request to fetch the JSON data
 	response, err := http.Get(url)
