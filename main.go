@@ -1,6 +1,8 @@
 package main
 
-func main() {
+import "fmt"
+
+func maind() {
 	/*Digiprint()
 	oned.Oned()
 	twod.Towd()
@@ -9,6 +11,10 @@ func main() {
 
 	pov := &lue
 	result := Gvoop(pov)
-	fmt.Println(result)*/
-	LeftorSift()
+	fmt.Println(result)
+	de := LeftorSift(4)
+	fmt.Println(de)
+	*/
+	de := Capitalize("bb$\"ZvxNq?w?i")
+	fmt.Println(de)
 }

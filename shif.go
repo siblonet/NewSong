@@ -1,11 +1,17 @@
 package main
 
-import "fmt"
+func LeftorSift(nb int) int {
+	if nb < 0 || nb > 4 {
+		return 0 // Return 0 for negative values (error)
+	}
 
-func LeftorSift() {
-	Big := 1 << 0
-	// Small := Big >> 2
-	fmt.Println(Big)
-	// fmt.Println(Small)
-	fmt.Println('\n')
+	result := 1
+	for i := 1; i <= nb; i++ {
+		if result > (1<<31-1)/i {
+			return 0 // Return 0 if the factorial overflows
+		}
+		result *= i
+	}
+
+	return result
 }
